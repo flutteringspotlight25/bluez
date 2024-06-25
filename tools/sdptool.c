@@ -1874,7 +1874,7 @@ static int add_pbap(sdp_session_t *session, svc_info_t *si)
 	sdp_set_service_classes(&record, svclass_id);
 
 	sdp_uuid16_create(&profile[0].uuid, PBAP_PROFILE_ID);
-	profile[0].version = 0x0100;
+	profile[0].version = 0x0102;
 	pfseq = sdp_list_append(0, profile);
 	sdp_set_profile_descs(&record, pfseq);
 
